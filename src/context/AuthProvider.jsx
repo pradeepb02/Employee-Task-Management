@@ -7,7 +7,10 @@ const AuthProvider = ({ children }) => {
  
   const [userdata,setUserData]=useState("")
   useEffect(() => {
-  setLocalStorage()
+  const storedData=getLocalStorage();
+  if(!storedData.employees){
+    setLocalStorage();
+  }
   const {employees}=getLocalStorage();
   setUserData(employees); //fetch data from localstorage
   }, [])
