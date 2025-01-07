@@ -7,7 +7,6 @@ import { useContext } from 'react'
 import { AuthContext } from './context/AuthProvider'
 import { UserContext } from './context/UserProvider'
 import { LoggedInUserContext } from './context/LoggedInUserProvider'
-import { setLocalStorage } from './utils/localstorage'
 
 function App() { 
 
