@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "react-scripts build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+    "build": "vite build",
+    "start": "vite preview",
+    "lint": "eslint ."
+  }  ,
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
